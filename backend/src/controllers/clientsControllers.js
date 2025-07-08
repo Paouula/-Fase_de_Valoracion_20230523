@@ -27,8 +27,15 @@ clientsControllers.getAllClientsId = async (req, res) => {
 //INSERT
 clientsControllers.insertClients = async (req, res) => {
     try {
+    
         //Solicitar los datos
         const { name, email, password, phone, age } = req.body;
+
+          //Verificamos si el empleado ya existe
+          const existingClient = await clientsModel.findOne({ email });
+          if (existingClient) {
+            return res.json({ message: "Cliente ya existe" });
+          }
 
         //Guardamos en la base de datos
         const newClients = new clientsModel({ name, email, password, phone, age })
