@@ -1,0 +1,718 @@
+{
+  "openapi" : "3.0.0",
+  "servers" : [ {
+    "description" : "SwaggerHub API Auto Mocking",
+    "url" : "https://virtserver.swaggerhub.com/ricaldone-ca0/Fase_Valoraciom_20230523/1.0.0"
+  } ],
+  "info" : {
+    "version" : "1.0.0",
+    "title" : "Fase_Valoración_20230523",
+    "description" : "Esta API funciona para la Fase de Valoración"
+  },
+  "paths" : {
+    "/api/clients" : {
+      "get" : {
+        "summary" : "Select Clients",
+        "tags" : [ "Clients" ],
+        "responses" : {
+          "200" : {
+            "description" : "OK"
+          },
+          "400" : {
+            "description" : "Bad Request"
+          }
+        },
+        "operationId" : "get-api-clients",
+        "description" : "Manda a llamar un método en especifico"
+      },
+      "post" : {
+        "summary" : "Insert Client",
+        "tags" : [ "Clients" ],
+        "responses" : {
+          "200" : {
+            "description" : "OK"
+          },
+          "400" : {
+            "description" : "Bad Request"
+          }
+        },
+        "operationId" : "Insert Client",
+        "description" : "Inserta nuevos métodos",
+        "parameters" : [ "Clients" ],
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "type" : "object",
+                "properties" : {
+                  "name" : {
+                    "type" : "string",
+                    "x-stoplight" : {
+                      "id" : "kfl2hzs4c4mar"
+                    }
+                  },
+                  "gmail" : {
+                    "type" : "string",
+                    "x-stoplight" : {
+                      "id" : "eyxuw9c5scsv5"
+                    },
+                    "format" : "email"
+                  },
+                  "password" : {
+                    "type" : "string",
+                    "x-stoplight" : {
+                      "id" : "ppywburll1oxg"
+                    },
+                    "format" : "password"
+                  },
+                  "phone" : {
+                    "type" : "string",
+                    "x-stoplight" : {
+                      "id" : "ecjtl0w55tf5y"
+                    }
+                  },
+                  "age" : {
+                    "type" : "number",
+                    "x-stoplight" : {
+                      "id" : "fbj57nag6511j"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "put" : {
+        "summary" : "Your PUT endpoint",
+        "tags" : [ "Clients" ],
+        "responses" : {
+          "200" : {
+            "description" : "OK"
+          },
+          "400" : {
+            "description" : "Bad Request"
+          }
+        },
+        "operationId" : "Update Client",
+        "description" : "Con este método podemos actualizar los datos de los clientes",
+        "parameters" : [ "Clients" ],
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "type" : "object",
+                "properties" : {
+                  "name" : {
+                    "type" : "string",
+                    "x-stoplight" : {
+                      "id" : "vcjn8s9yubc3r"
+                    }
+                  },
+                  "email" : {
+                    "type" : "string",
+                    "x-stoplight" : {
+                      "id" : "1hw233vd7tkol"
+                    },
+                    "format" : "email"
+                  },
+                  "password" : {
+                    "type" : "string",
+                    "x-stoplight" : {
+                      "id" : "dsg6ochpt8zv7"
+                    },
+                    "format" : "password"
+                  },
+                  "phone" : {
+                    "type" : "string",
+                    "x-stoplight" : {
+                      "id" : "rr04b0fdz4n83"
+                    }
+                  },
+                  "age" : {
+                    "type" : "number",
+                    "x-stoplight" : {
+                      "id" : "ehssxmtm29jeg"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete" : {
+        "summary" : "Your DELETE endpoint",
+        "tags" : [ "Clients" ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "object",
+                  "properties" : {
+                    "name" : {
+                      "type" : "string",
+                      "x-stoplight" : {
+                        "id" : "uqd35bwdmhlny"
+                      }
+                    },
+                    "email" : {
+                      "type" : "string",
+                      "x-stoplight" : {
+                        "id" : "0zmk6ft50ki8w"
+                      },
+                      "format" : "email"
+                    },
+                    "password" : {
+                      "type" : "string",
+                      "x-stoplight" : {
+                        "id" : "gh6uf7pyfvcls"
+                      },
+                      "format" : "password"
+                    },
+                    "phone" : {
+                      "type" : "string",
+                      "x-stoplight" : {
+                        "id" : "ze4a2x6tdvo8a"
+                      }
+                    },
+                    "age" : {
+                      "type" : "number",
+                      "x-stoplight" : {
+                        "id" : "gvv1k14iktltq"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400" : {
+            "description" : "Bad Request"
+          }
+        },
+        "operationId" : "Delete Clients",
+        "description" : "En este método podemos borrar a un client",
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "type" : "object",
+                "properties" : {
+                  "name" : {
+                    "type" : "string",
+                    "x-stoplight" : {
+                      "id" : "u9zo98vckpjoh"
+                    }
+                  },
+                  "email" : {
+                    "type" : "string",
+                    "x-stoplight" : {
+                      "id" : "ch0b8k9j7g0eq"
+                    },
+                    "format" : "email"
+                  },
+                  "password" : {
+                    "type" : "string",
+                    "x-stoplight" : {
+                      "id" : "eekcj3dxnthmv"
+                    },
+                    "format" : "password"
+                  },
+                  "phone" : {
+                    "type" : "string",
+                    "x-stoplight" : {
+                      "id" : "n3mow69qbhgnh"
+                    }
+                  },
+                  "age" : {
+                    "type" : "number",
+                    "x-stoplight" : {
+                      "id" : "0ixrfsgqhen1a"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/reserve" : {
+      "get" : {
+        "summary" : "Select Reserve",
+        "tags" : [ "Reserve" ],
+        "responses" : {
+          "200" : {
+            "description" : "OK"
+          },
+          "400" : {
+            "description" : "Bad Request"
+          }
+        },
+        "operationId" : "Select Reserve",
+        "description" : "Manda a llamar un método en especifico",
+        "requestBody" : {
+          "content" : { }
+        }
+      },
+      "post" : {
+        "summary" : "Your POST endpoint",
+        "tags" : [ "Reserve" ],
+        "responses" : {
+          "200" : {
+            "description" : "OK"
+          },
+          "400" : {
+            "description" : "Bad Request"
+          }
+        },
+        "operationId" : "Insert Reserve",
+        "description" : "Inserta nuevos métodos ",
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "type" : "object",
+                "properties" : {
+                  "idClients" : {
+                    "type" : "string",
+                    "x-stoplight" : {
+                      "id" : "09quqhagwhjbe"
+                    }
+                  },
+                  "vehicule" : {
+                    "type" : "string",
+                    "x-stoplight" : {
+                      "id" : "buzubzwkqhee9"
+                    }
+                  },
+                  "service" : {
+                    "type" : "string",
+                    "x-stoplight" : {
+                      "id" : "2ny4idv4kv1bg"
+                    }
+                  },
+                  "status" : {
+                    "type" : "string",
+                    "x-stoplight" : {
+                      "id" : "s5evnhl6ngxyn"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "put" : {
+        "summary" : "Your PUT endpoint",
+        "tags" : [ "Reserve" ],
+        "responses" : {
+          "200" : {
+            "description" : "OK"
+          },
+          "400" : {
+            "description" : "Bad Request"
+          }
+        },
+        "operationId" : "Update Reserve",
+        "description" : "Con este método podemos actualizar los datos de las reservas",
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "type" : "object",
+                "properties" : {
+                  "idClients" : {
+                    "type" : "string",
+                    "x-stoplight" : {
+                      "id" : "8hd14a9vxj12h"
+                    }
+                  },
+                  "vehicule" : {
+                    "type" : "string",
+                    "x-stoplight" : {
+                      "id" : "r6slu1vc80q9b"
+                    }
+                  },
+                  "service" : {
+                    "type" : "string",
+                    "x-stoplight" : {
+                      "id" : "0rrs3lxpauyku"
+                    }
+                  },
+                  "status" : {
+                    "type" : "string",
+                    "x-stoplight" : {
+                      "id" : "3l0d1nwhurqwg"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete" : {
+        "summary" : "Your DELETE endpoint",
+        "tags" : [ "Reserve" ],
+        "responses" : {
+          "200" : {
+            "description" : "OK"
+          },
+          "400" : {
+            "description" : "Bad Request"
+          }
+        },
+        "operationId" : "Delete Reserve",
+        "description" : "En este método podemos borrar a un client",
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "type" : "object",
+                "properties" : {
+                  "idClients" : {
+                    "type" : "string",
+                    "x-stoplight" : {
+                      "id" : "p44cfx3c68edg"
+                    }
+                  },
+                  "vehicule" : {
+                    "type" : "string",
+                    "x-stoplight" : {
+                      "id" : "00zicsx0mmapu"
+                    }
+                  },
+                  "service" : {
+                    "type" : "string",
+                    "x-stoplight" : {
+                      "id" : "fr96uvxvu5rrl"
+                    }
+                  },
+                  "status" : {
+                    "type" : "string",
+                    "x-stoplight" : {
+                      "id" : "6u9t9guhx84bw"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components" : {
+    "schemas" : {
+      "LightingSummary" : {
+        "type" : "object",
+        "properties" : {
+          "zones" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/components/schemas/LightingZone"
+            }
+          },
+          "zoneStatus" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/components/schemas/LightingZoneStatus"
+            }
+          }
+        },
+        "description" : "ok"
+      },
+      "LightingZone" : {
+        "type" : "object",
+        "properties" : {
+          "id" : {
+            "type" : "string"
+          },
+          "name" : {
+            "type" : "string"
+          },
+          "deviceId" : {
+            "type" : "integer",
+            "format" : "int32"
+          },
+          "deviceType" : {
+            "type" : "string",
+            "enum" : [ "dimmer", "switch" ]
+          },
+          "zone" : {
+            "type" : "string"
+          }
+        }
+      },
+      "LightingZoneStatus" : {
+        "type" : "object",
+        "properties" : {
+          "id" : {
+            "type" : "string"
+          },
+          "name" : {
+            "type" : "string"
+          },
+          "lastUpdate" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
+          "level" : {
+            "type" : "integer",
+            "format" : "int32"
+          }
+        },
+        "description" : "the status of the lighting zone."
+      },
+      "TemperatureSummary" : {
+        "type" : "object",
+        "properties" : {
+          "zones" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/components/schemas/TemperatureZone"
+            }
+          },
+          "zoneStatus" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/components/schemas/TemperatueZoneStatus"
+            }
+          }
+        },
+        "description" : "ok"
+      },
+      "TemperatureZone" : {
+        "type" : "object",
+        "required" : [ "id", "name" ],
+        "properties" : {
+          "id" : {
+            "type" : "integer",
+            "format" : "int32",
+            "description" : "the unique identifier for the zone"
+          },
+          "name" : {
+            "type" : "string"
+          },
+          "inputPosition" : {
+            "type" : "integer",
+            "format" : "int32"
+          },
+          "outputPosition" : {
+            "type" : "integer",
+            "format" : "int32"
+          },
+          "zone" : {
+            "type" : "string"
+          }
+        },
+        "description" : "a single temperature zone"
+      },
+      "TemperatueZoneStatus" : {
+        "type" : "object",
+        "required" : [ "id", "timestamp", "value" ],
+        "properties" : {
+          "id" : {
+            "type" : "string",
+            "description" : "the unique identifier for the zone"
+          },
+          "name" : {
+            "type" : "string",
+            "description" : "the name of the zone"
+          },
+          "value" : {
+            "type" : "number",
+            "format" : "double",
+            "description" : "the temperature in the zone"
+          },
+          "units" : {
+            "type" : "string",
+            "description" : "the temperature units",
+            "enum" : [ "celsius", "fahrenheit" ],
+            "default" : "fahrenheit"
+          },
+          "timestamp" : {
+            "type" : "string",
+            "format" : "date-time",
+            "description" : "the timestamp when the temperature was measured"
+          }
+        },
+        "description" : "status of a single zone"
+      },
+      "ApiResponse" : {
+        "type" : "object",
+        "properties" : {
+          "code" : {
+            "type" : "integer",
+            "format" : "int32"
+          },
+          "message" : {
+            "type" : "string",
+            "example" : "everything is ok"
+          }
+        }
+      },
+      "HeaterState" : {
+        "type" : "object",
+        "properties" : {
+          "id" : {
+            "type" : "string"
+          },
+          "state" : {
+            "type" : "string"
+          }
+        }
+      },
+      "DeviceState" : {
+        "type" : "object",
+        "properties" : {
+          "id" : {
+            "type" : "string"
+          },
+          "name" : {
+            "type" : "string"
+          },
+          "lastUpdate" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
+          "level" : {
+            "type" : "integer",
+            "format" : "int32"
+          }
+        }
+      },
+      "ForecastResponse" : {
+        "type" : "object",
+        "properties" : {
+          "city" : {
+            "$ref" : "#/components/schemas/City"
+          },
+          "values" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/components/schemas/Forecast"
+            }
+          }
+        }
+      },
+      "Forecast" : {
+        "type" : "object",
+        "properties" : {
+          "date" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
+          "pressure" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "humidity" : {
+            "type" : "integer",
+            "format" : "int32"
+          },
+          "windSpeed" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "clouds" : {
+            "type" : "integer",
+            "format" : "int32"
+          },
+          "temperature" : {
+            "$ref" : "#/components/schemas/ForecastTemperature"
+          },
+          "weather" : {
+            "$ref" : "#/components/schemas/WeatherForecast"
+          }
+        }
+      },
+      "City" : {
+        "type" : "object",
+        "properties" : {
+          "id" : {
+            "type" : "integer",
+            "format" : "int64"
+          },
+          "name" : {
+            "type" : "string"
+          },
+          "lat" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "lon" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "country" : {
+            "type" : "string"
+          }
+        }
+      },
+      "ForecastTemperature" : {
+        "type" : "object",
+        "properties" : {
+          "low" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "high" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "morning" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "day" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "evening" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "night" : {
+            "type" : "number",
+            "format" : "double"
+          }
+        }
+      },
+      "WeatherForecast" : {
+        "type" : "object",
+        "properties" : {
+          "summary" : {
+            "type" : "string"
+          },
+          "description" : {
+            "type" : "string"
+          },
+          "icon" : {
+            "type" : "string"
+          }
+        }
+      },
+      "DeviceRegistrationInfo" : {
+        "type" : "object",
+        "properties" : {
+          "uri" : {
+            "type" : "string",
+            "format" : "uri",
+            "example" : "http://10.0.0.220:8080"
+          },
+          "id" : {
+            "type" : "string",
+            "format" : "uuid",
+            "example" : "0729a580-2240-11e6-9eb5-0002a5d5c51b"
+          }
+        }
+      }
+    }
+  }
+}
